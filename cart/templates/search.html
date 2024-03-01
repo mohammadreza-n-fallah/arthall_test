@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{% url 'cart' %}" method="get">
+        <input type="text" name="query">
+    </form>
+    <h2>Search Results</h2>
+    {% for object in objects %}
+       <a href="{% url 'createfactor' object.id %}"> <p>{{object.name}}</p></a>
+    {% endfor %}
+</body>
+</html>

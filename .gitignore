@@ -1,0 +1,9 @@
+venv/*
+products/*
+db.sqlite3
+
+# *.pyc
+__pycache__/
+authuser/migrations/*
+cart/migrations/*
+core/migrations/*
